@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff7f4">
+<title>For My Mi Amor ♡</title>
+<style>
+:root{--ink:#3b2529;--muted:#765c61;--rose:#d86d82;--rose2:#f3a8b7;--cream:#fffaf7;--paper:#fffdfb;--line:#edd8d5;--shadow:0 20px 60px rgba(88,48,55,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 10%,#fff 0,#fff7f4 35%,#fbecef 100%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}.hide{display:none!important}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}.heart{position:absolute;font-size:18px;opacity:.0;animation:float 6s linear forwards}@keyframes float{0%{transform:translateY(20px) scale(.7);opacity:0}15%{opacity:.8}100%{transform:translateY(-110vh) translateX(var(--drift)) rotate(20deg);opacity:0}}
+.cover{min-height:100svh;display:grid;place-items:center;padding:28px;position:relative}.cover:before,.cover:after{content:'♡';position:absolute;font-size:110px;color:#efc8cf;opacity:.35}.cover:before{left:7%;top:10%;transform:rotate(-15deg)}.cover:after{right:8%;bottom:9%;transform:rotate(15deg)}
+.envelope{width:min(92vw,620px);text-align:center}.tiny{letter-spacing:.22em;text-transform:uppercase;font:700 11px/1.4 Arial,sans-serif;color:var(--rose)}h1{font-size:clamp(42px,10vw,78px);line-height:.95;margin:20px 0 14px;font-weight:400}.script{font-style:italic;color:var(--rose)}.sub{font-size:clamp(17px,4vw,22px);line-height:1.6;color:var(--muted);max-width:520px;margin:0 auto 32px}.seal{width:92px;height:92px;border-radius:50%;border:1px solid #e8b5bf;background:#fff;display:grid;place-items:center;margin:28px auto;box-shadow:var(--shadow);font-size:34px;cursor:pointer;transition:.3s}.seal:hover{transform:scale(1.07) rotate(-4deg)}.open-btn{border:0;border-radius:999px;padding:15px 28px;background:var(--ink);color:#fff;font:700 12px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 30px rgba(59,37,41,.18)}
+main{display:none}.top{min-height:92svh;display:grid;place-items:center;padding:70px 22px 40px;text-align:center}.top h2{font-size:clamp(48px,12vw,92px);font-weight:400;line-height:.92;margin:14px 0}.date{display:inline-block;padding:8px 14px;border:1px solid #e9cbd0;border-radius:999px;font:700 11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);background:#fff9}.scroll{margin-top:45px;font:11px Arial,sans-serif;letter-spacing:.2em;color:#9a7d82;text-transform:uppercase}.arrow{display:block;margin:10px auto;font-size:20px}
+section{width:min(94vw,960px);margin:0 auto 100px}.card{background:rgba(255,253,251,.86);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:clamp(26px,6vw,58px)}.section-kicker{font:700 11px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:15px}.section-title{font-size:clamp(34px,7vw,56px);font-weight:400;margin:0 0 20px;line-height:1}.letter{font-size:clamp(18px,3vw,22px);line-height:1.9;color:#50393e}.letter p{margin:0 0 20px}.signature{font-style:italic;font-size:28px;color:var(--rose);margin-top:32px}
+.video-wrap{background:#22171a;border-radius:22px;padding:10px;box-shadow:0 24px 55px rgba(48,27,32,.18);overflow:hidden}.video-wrap video{display:block;width:100%;max-height:78svh;object-fit:contain;border-radius:15px;background:#100d0e}.video-status{font:11px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#a17e84;text-align:center;margin-top:12px}.video-note{font-size:15px;line-height:1.6;color:var(--muted);text-align:center;margin:20px auto 0;max-width:650px}.chapters{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:14px}.chapter{border:1px solid #e6ced1;background:#fff7f5;color:var(--ink);padding:12px 8px;border-radius:14px;font:700 10px Arial,sans-serif;letter-spacing:.04em;cursor:pointer}.chapter small{display:block;color:#a77d84;margin-top:5px;font-weight:400}.chapter.active,.chapter:hover{background:#f9e4e8;border-color:#e2aab6}
+.promise{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}.promise div{padding:22px;border:1px solid #edd9d7;border-radius:20px;background:#fffaf8;font-size:18px;line-height:1.55}.promise b{display:block;font-size:13px;font-family:Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:9px}
+.final{min-height:100svh;display:grid;place-items:center;text-align:center;padding:70px 22px}.final .card{max-width:850px}.big{font-size:clamp(40px,9vw,82px);line-height:.95;font-weight:400;margin:12px 0 26px}.forever{font-size:clamp(20px,4vw,28px);line-height:1.7;color:var(--muted)}.last{margin-top:28px;font-size:clamp(25px,5vw,38px);font-style:italic;color:var(--rose)}footer{text-align:center;padding:30px 20px 60px;color:#9b7d82;font-size:13px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}.reveal.show{opacity:1;transform:none}.music{position:fixed;right:16px;bottom:16px;z-index:30;width:48px;height:48px;border-radius:50%;border:1px solid #e5c4ca;background:#fffaf8;color:var(--rose);box-shadow:0 10px 30px rgba(75,40,48,.12);cursor:pointer;font-size:20px}.hint{font:11px Arial,sans-serif;color:#a17e84;margin-top:10px}
+@media(max-width:650px){.promise{grid-template-columns:1fr}.chapters{grid-template-columns:repeat(2,1fr)}.card{border-radius:22px}.cover:before,.cover:after{font-size:70px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<div class="cover" id="cover">
+  <div class="envelope">
+    <div class="tiny">a little birthday surprise</div>
+    <h1>For my <span class="script">Mi Amor</span> ♡</h1>
+    <p class="sub">I made this little corner of the internet because one birthday message could never hold everything I want to tell you.</p>
+    <div class="seal" id="seal" aria-label="Open the letter">♡</div>
+    <button class="open-btn" id="open">Open your surprise</button>
+    <div class="hint">best opened with headphones & a little time</div>
+  </div>
+</div>
+<main id="main">
+  <div class="top">
+    <div class="reveal">
+      <div class="date">24 September · your day</div>
+      <h2>Happy Birthday,<br><span class="script">my love.</span></h2>
+      <p class="sub">If I could put a hug inside this screen, I would.</p>
+      <div class="scroll">keep scrolling<span class="arrow">↓</span></div>
+    </div>
+  </div>
+
+  <section class="reveal"><div class="card letter">
+    <div class="section-kicker">01 · A letter for you</div>
+    <h3 class="section-title">To the girl I keep choosing</h3>
+    <p>My love,</p>
+    <p>Happy birthday to the person who has become such a beautiful part of my life. I wish I could be beside you today, steal a proper hug, look at you while you smile, and tell you all of this without a screen between us.</p>
+    <p>Sometimes I still think about how strange and beautiful it is that two people can be so far apart and yet somehow feel so close. Out of all the people in this enormous world, I found you. And somehow, talking to you can make an ordinary day feel like something I want to remember.</p>
+    <p>I don't love you only for the big moments. I love the little things too — your voice, your songs, the way you talk about the things you care about, the silly conversations, the quiet moments, and all the tiny pieces of you that I have slowly come to know.</p>
+    <p>And when I imagine my future, I don't imagine some perfect movie version of life. I imagine real days: laughing over stupid things, having difficult days and choosing patience, celebrating little victories, making memories, travelling, growing, and simply being there for each other. When I picture those years, I keep finding you in them.</p>
+    <p>I can't promise that life will always be easy. But I can tell you what my heart wants: <em>you are the person I want to keep choosing.</em> I want to keep learning you, loving you, supporting you, and building something that lasts. If life gives me the choice again and again, I want my answer to keep being you.</p>
+    <p>So today, on your birthday, I hope you know this: you are loved. Deeply, honestly, and in all the quiet ways that don't always fit into words.</p>
+    <p>Feliz cumpleaños, mi amor. May this year be gentle with your heart, full of beautiful surprises, and full of reasons to smile.</p>
+    <div class="signature">Te amo muchísimo. ♡</div>
+  </div></section>
+
+  <section class="reveal"><div class="card">
+    <div class="section-kicker">02 · You only saw the finished gift</div>
+    <h3 class="section-title">But you didn't see this part.</h3>
+    <p class="video-note">Every little cut, fold, mistake, restart and tiny detail in this video happened because I wanted to make something with my own hands for you. I wanted you to have something that carried a little piece of my time with it.</p>
+    <div class="video-wrap" style="margin-top:26px"><video id="giftVideo" controls playsinline preload="metadata" poster="assets/poster.jpg"><source src="assets/video/part00.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+    <div class="video-status" id="videoStatus">Part 1 of 8 · the full video continues automatically</div>
+    <div class="chapters" id="chapters">
+      <button class="chapter active" data-time="0">The beginning<small>0:00</small></button>
+      <button class="chapter" data-time="80">Making it<small>1:20</small></button>
+      <button class="chapter" data-time="160">More details<small>2:40</small></button>
+      <button class="chapter" data-time="240">Getting there<small>4:00</small></button>
+      <button class="chapter" data-time="320">The little things<small>5:20</small></button>
+      <button class="chapter" data-time="400">Almost there<small>6:40</small></button>
+      <button class="chapter" data-time="480">Finishing touches<small>8:00</small></button>
+      <button class="chapter" data-time="560">For you<small>9:20</small></button>
+    </div>
+    <p class="video-note">The video is split into eight small files so GitHub can host it. Don't worry — the website automatically moves from one part to the next, so it feels like one continuous video.</p>
+  </div></section>
+
+  <section class="reveal"><div class="card letter">
+    <div class="section-kicker">03 · What I hope you remember</div>
+    <h3 class="section-title">Not just today.</h3>
+    <div class="promise">
+      <div><b>When life gets busy</b>I want to be the person who still makes space for you.</div>
+      <div><b>When you're happy</b>I want to hear the story behind your smile.</div>
+      <div><b>When you're tired</b>I want you to know you never have to be perfect around me.</div>
+      <div><b>When we grow</b>I want to grow beside you, not away from you.</div>
+    </div>
+    <p style="margin-top:30px">Loving you isn't just something I want to say beautifully on your birthday. It's something I want to show you in ordinary days too.</p>
+  </div></section>
+
+  <section class="final reveal"><div class="card">
+    <div class="section-kicker">04 · One last thing</div>
+    <div class="big">If I had to write<br>my future in one sentence…</div>
+    <div class="forever">I'd write your name in it — not because I know exactly what every tomorrow will look like, but because you're the person I want beside me while we find out.</div>
+    <div class="last">“I choose you, again and again.”</div>
+    <p style="margin-top:30px;color:#80646a;line-height:1.7">Happy birthday, my beautiful girl.<br>Distance may separate our hands for now, but it doesn't get to decide where my heart belongs.</p>
+    <div class="signature">Te amo muchísimo, mi amor. ♡</div>
+  </div></section>
+  <footer>Made with too much love, a ridiculous amount of time, and one very special girl in mind. ♡</footer>
+</main>
+<button class="music" id="ambient" aria-label="Toggle soft ambience">♫</button>
+<script>
+const cover=document.getElementById('cover'),main=document.getElementById('main'),open=document.getElementById('open'),seal=document.getElementById('seal');
+function enter(){cover.style.display='none';main.style.display='block';document.querySelectorAll('.reveal').forEach((x,i)=>setTimeout(()=>x.classList.add('show'),100+i*120)); burst(18); window.scrollTo(0,0)}
+open.onclick=enter;seal.onclick=enter;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+const v=document.getElementById('giftVideo'),status=document.getElementById('videoStatus');
+const segments=[80.948,80.907,80.947,80.934,80.987,80.981,80.988,59.274];
+const files=segments.map((_,i)=>`assets/video/part${String(i).padStart(2,'0')}.mp4`);
+let currentPart=0,pendingOffset=0,shouldPlay=false;
+function totalBefore(i){return segments.slice(0,i).reduce((a,b)=>a+b,0)}
+function setActiveGlobal(t){const buttons=[...document.querySelectorAll('.chapter')];let active=buttons.reduce((a,b)=>+b.dataset.time<=t?b:a,buttons[0]);buttons.forEach(x=>x.classList.toggle('active',x===active))}
+function loadPart(i,offset=0,autoplay=false){currentPart=Math.max(0,Math.min(i,files.length-1));pendingOffset=Math.max(0,offset);shouldPlay=autoplay;status.textContent=`Part ${currentPart+1} of ${files.length} · the full video continues automatically`;v.src=files[currentPart];v.load()}
+v.addEventListener('loadedmetadata',()=>{if(pendingOffset>0)v.currentTime=Math.min(pendingOffset,Math.max(0,v.duration-.1));if(shouldPlay){v.play().catch(()=>{});shouldPlay=false}});
+v.addEventListener('ended',()=>{if(currentPart<files.length-1)loadPart(currentPart+1,0,true)});
+v.addEventListener('timeupdate',()=>{setActiveGlobal(totalBefore(currentPart)+v.currentTime)});
+document.querySelectorAll('.chapter').forEach(b=>b.onclick=()=>{const t=+b.dataset.time;let i=0;while(i<segments.length-1 && totalBefore(i+1)<=t)i++;loadPart(i,t-totalBefore(i),true);setActiveGlobal(t)});
+function burst(n){for(let i=0;i<n;i++){const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✦','❀'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'%';h.style.bottom='-30px';h.style.setProperty('--drift',(Math.random()*160-80)+'px');h.style.animationDelay=(Math.random()*1.5)+'s';h.style.animationDuration=(4+Math.random()*3)+'s';document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),8000)}}
+setInterval(()=>{if(main.style.display!=='none')burst(2)},5000);
+// Gentle, generated ambience. No external audio file required.
+let ac=null,gain=null,playing=false;
+function ambience(){if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();gain=ac.createGain();gain.gain.value=.018;gain.connect(ac.destination);const notes=[261.63,329.63,392,523.25];notes.forEach((f,i)=>{const o=ac.createOscillator();const g=ac.createGain();o.type='sine';o.frequency.value=f;g.gain.value=.02;o.connect(g).connect(gain);o.start();g.gain.setTargetAtTime(0.001,ac.currentTime+i*1.5,1.5)});playing=true} if(ac.state==='suspended')ac.resume();gain.gain.setTargetAtTime(playing?.018:.0001,ac.currentTime,.4);playing=!playing}
+document.getElementById('ambient').onclick=ambience;
+</script>
+</body>
+</html>
